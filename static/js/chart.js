@@ -28,7 +28,7 @@ function optionChanged(newSample) {
   // Fetch new data each time a new sample is selected
   buildMetadata(newSample);
   buildCharts(newSample);
-  
+
 }
 
 // Demographics Panel 
@@ -64,8 +64,8 @@ function buildCharts(sample) {
     let samples = data.samples;
 
     // 4. Create a variable that filters the samples for the object with the desired sample number.
-    let resultArray = samples.filter(sampleObj => sampleObj.id ==sample);
-    
+    let resultArray = samples.filter(sampleObj => sampleObj.id == sample);
+
     //  5. Create a variable that holds the first sample in the array.
     let result = resultArray[0];
     console.log(result);
@@ -98,9 +98,43 @@ function buildCharts(sample) {
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-     title: `Top Ten Bacteria Cultures Found in Sample ${sample}`
-   };
+      width: 500, height: 500,
+      title: `Top Ten Bacteria Cultures Found in Sample ${sample}`,
+      margin: { t: 30, l: 150 },
+    };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
+
+    //bubble chart start
+    // 1. Create the trace for the bubble chart.
+    var bubbleData = [
+      {
+        x: otu_ids,
+        y: sample_values,
+        text: otu_labels,
+        mode: `markers`,
+        marker: {
+          size: sample_values,
+          color: otu_ids,
+          colorscale: "Earth",
+        }
+      }
+
+    ];
+
+    // 2. Create the layout for the bubble chart.
+    var bubbleLayout = {
+      title: `All Bacteria Cultures Per Sample ${sample}`,
+      showlegend: false,
+      xaxis: {title: "OTU ID"},
+      yaxis: {title: "Bacteria Count"},
+      margin: { t: 30},
+    };
+
+    // 3. Use Plotly to plot the data with the layout.
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+
+
   });
+  //sample.json no longer available
 }
