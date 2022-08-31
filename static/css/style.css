@@ -1,5 +1,10 @@
+body {
+    color: black;
+    Background:white;
+    text-decoration-color: black; 
+  }
 .jumbotron {
-    background-image: url("./static/images/cows_640.png");
+    background-image: url("../images/pexels-chokniti-khongchum-2280549.jpg");
     background-size: 100% 100%;
     text-align: center;
 }
