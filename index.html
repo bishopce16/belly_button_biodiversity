@@ -9,20 +9,22 @@
   <!--link to bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!--link to css style sheet-->
-  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body class="bg-dark">
   <!--dashboard starts-->
   <div class="container">
+
     <!--nav bar-->
     <div class="wrapper">
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <a class="navbar-brand" href="https://github.com/bishopce16/belly_button_biodiversity.git">GitHub Repository</a>
+        <a class="navbar-brand" href="https://github.com/bishopce16/belly_button_biodiversity.git">Link to GitHub Repository</a>
       </nav>
     </div>
+
     <!--jumbotron-->
-    <section>
+    <section class="jumbotron_section">
       <div class="row">
         <div class="col-md-12 jumbotron text-center">
           <h1>Belly Button Biodiversity Dashboard</h1>
@@ -50,18 +52,20 @@
               <h3 class="panel-title">Demographic Info</h3>
             </div>
             <div id="sample-metadata" class="panel-body"></div>
+            <div class="panel-footer">WFREQ is used in the gauge to the right</div>
           </div>
         </div>
 
-        <!--bar chart-->
-        <div class="col-md-5">
-          <div id="bar"></div>
-        </div>
-
         <!--gauge chart-->
-        <div class="col-md-5">
+        <div class="col-md-6">
           <div id="gauge"></div>
         </div>
+      </div>
+    </section>
+      <!--bar chart-->
+    <section class="bar_chart">
+      <div class="col-md-6">
+        <div id="bar"></div>
       </div>
     </section>
 

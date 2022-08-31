@@ -113,7 +113,7 @@ function buildCharts(sample) {
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      width: 500, height: 500,
+      width: 900, height: 500,
       title: `Top Ten Bacteria Cultures Found in Sample ${sample}`,
       margin: { t: 30, l: 150 },
     };

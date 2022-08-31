@@ -1,9 +1,5 @@
-body {
-
-    color: #f7f7f7;
-  }
-/* .jumbotron {
-    background-image: url("static/images/flasks-g02929666c_1920.jpg");
+.jumbotron {
+    backgound-image: url(./static/images/cows_640.png);
     background-size: 100% 100%;
     text-align: center;
-  } */
+}
