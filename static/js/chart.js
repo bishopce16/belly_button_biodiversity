@@ -105,8 +105,8 @@ function buildCharts(sample) {
     var barData = [
       {
         y: yticks,
-        x: sample_values,
-        text: otu_labels,
+        x: sample_values.slice(0, 10).reverse(),
+        text: otu_labels.slice(0, 10).reverse(),
         type: "bar",
         orientation: "h",
       }
