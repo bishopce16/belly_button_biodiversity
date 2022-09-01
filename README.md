@@ -26,8 +26,7 @@ Tools: Visual Studio Code, HTML, JavaScript, Bootstrap, CSS<br>
 
 The index.html file was deployed by GitHub pages for the ease of the users, the link is located above the overview of project section.<br> 
 
-The image of test tubes in the jumbotron was a free stock photo from 
-[Pexels Website](www.pexels.com), [Photo by Chokniti Khongchum](https://www.pexels.com/photo/laboratory-test-tubes-2280549/). <br>
+The image of test tubes in the jumbotron was a free stock photo from the [Pexels Website](https://www.pexels.com/), [Photo by Chokniti Khongchum](https://www.pexels.com/photo/laboratory-test-tubes-2280549/). <br>
 
 ![Webpage bellybutton](static/images/webpage_bellybuttons.png)<br>
 
